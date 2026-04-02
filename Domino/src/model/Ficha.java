@@ -32,6 +32,7 @@ public class Ficha {
     public String toString() {
         return "[" + ladoA + "|" + ladoB + "]";
     }
+
 }
 
 
