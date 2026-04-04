@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,7 +31,6 @@ public class JuegoController {
         empezarJuego();
     }
     private void empezarJuego() {
-        // 1. Repartir 7 fichas al jugador (Lógica)
         List<Ficha> manoInicial = mazo.repartir(7);
         for (Ficha f : manoInicial) {
             jugadorHumano.agregarFicha(f);
@@ -58,7 +57,7 @@ public class JuegoController {
         contenedorManoJugador.getChildren().clear();
         contenedorTablero.getChildren().clear();
         initialize();
-        System.out.println("Juego reiniciado");
+        System.out.println("Reiniciando juego");
     }
 }
 

@@ -16,22 +16,19 @@ public class LogicaTablero {
         }
 
         if (alInicio) {
-            // Miramos el lado A de la primera ficha del tablero
             int extremoIzquierdo = fichasEnTablero.getFirst().getLadoA();
             
-            // Si el lado B de mi ficha nueva pega con el extremo
             if (ficha.getLadoB() == extremoIzquierdo) {
                 fichasEnTablero.addFirst(ficha);
                 return true;
             } 
-            // Si el lado A de mi ficha nueva pega, hay que "voltearla"
+
             else if (ficha.getLadoA() == extremoIzquierdo) {
                 Ficha volteada = new Ficha(ficha.getLadoB(), ficha.getLadoA());
                 fichasEnTablero.addFirst(volteada);
                 return true;
             }
         } else {
-            // Miramos el lado B de la última ficha del tablero
             int extremoDerecho = fichasEnTablero.getLast().getLadoB();
             
             if (ficha.getLadoA() == extremoDerecho) {
@@ -44,7 +41,6 @@ public class LogicaTablero {
                 return true;
             }
         }
-
         return false;
     }
 }

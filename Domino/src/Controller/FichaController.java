@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
@@ -19,11 +19,9 @@ public class FichaController {
 
     public void cargarDatos(Ficha ficha){
         this.fichaLogica = ficha;
-
         labelSuperior.setText(String.valueOf(ficha.getLadoA()));
         labelInferior.setText(String.valueOf(ficha.getLadoB()));
     }
-
     public Ficha getFichaLogica(){
         return this.fichaLogica;
     }

@@ -22,5 +22,22 @@ Proyecto desarrollado para la asignatura de Programación, enfocado en la implem
 - `src/view`: Archivos FXML 
 - `src/controller`: Manejo de eventos y conexión Vista-Modelo.
 
+## Interfaz y Lógica de Inicio
+- **Pantalla de Bienvenida:** Diseño e implementación de `MenuInicio.fxml` con estilo visual de mesa de juego.
+- **Controlador de Navegación:** `MenuInicioController.java` para gestionar el cambio fluido entre el menu y el tablero principal.
+- **Generación del Mazo:** Lógica para fabricar las 28 fichas reglamentarias (0-0 al 6-6) sin duplicados.
+- **Sistema de Barajado:** `Collections.shuffle` para garantizar aleatoriedad en cada partida.
+- **Reparto Inicial:** `repartir(7)` que entrega las fichas iniciales al jugador Williams y a la CPU.
+
+
+
+
+
+
+
+
+
+
+
 ## Autor
 - **Williams Sánchez** - [Williamsanchez056](https://github.com/Williamsanchez056)

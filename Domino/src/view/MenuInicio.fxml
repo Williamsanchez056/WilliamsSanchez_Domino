@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="30.0" 
+      style="-fx-background-color: #2e5a1c; -fx-border-color: #5d3a1a; -fx-border-width: 10;" 
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="controller.MenuInicioController">
+   
+   <children>
+      <Label text="DOMINO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      
+      <Label text="Desarrollado por Williams Sanchez" textFill="#d9d9d9">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+
+      <Button mnemonicParsing="false" onAction="#botonEmpezar" prefHeight="60.0" prefWidth="200.0" 
+              style="-fx-background-color: #f1c40f; -fx-background-radius: 30; -fx-cursor: hand;" 
+              text="START">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      
+      <Label text="Presiona START para repartir las fichas" textFill="WHITE" />
+   </children>
+</VBox>

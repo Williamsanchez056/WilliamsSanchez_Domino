@@ -1,12 +1,12 @@
 {
-
     "version": "0.2.0",
     "configurations": [
         {
             "type": "java",
-            "name": "Current File",
+            "name": "Jugar Dominó Criollo ",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "view.Main",
+            "vmArgs": "--module-path \"C:/Users/Willy/OneDrive/Escritorio/javafx-sdk-25.0.2/lib\" --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media"
         }
     ]
 }
