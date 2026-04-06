@@ -21,7 +21,6 @@
             <Font name="System Italic" size="18.0" />
          </font>
       </Label>
-
       <Button mnemonicParsing="false" onAction="#botonEmpezar" prefHeight="60.0" prefWidth="200.0" 
               style="-fx-background-color: #f1c40f; -fx-background-radius: 30; -fx-cursor: hand;" 
               text="START">

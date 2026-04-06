@@ -1,4 +1,4 @@
-# Juego de Dominó Criollo 
+# Juego de Domino Criollo 
 
 Proyecto desarrollado para la asignatura de Programación, enfocado en la implementación del patrón de diseño **MVC (Modelo-Vista-Controlador)** y el uso de **FXML** para una interfaz moderna y funcional.
 
@@ -29,15 +29,11 @@ Proyecto desarrollado para la asignatura de Programación, enfocado en la implem
 - **Sistema de Barajado:** `Collections.shuffle` para garantizar aleatoriedad en cada partida.
 - **Reparto Inicial:** `repartir(7)` que entrega las fichas iniciales al jugador Williams y a la CPU.
 
-
-
-
-
-
-
-
-
-
+## Como Funciona
+1. Clona el repositorio: `git clone https://github.com/Williamsanchez056/Domino.git`
+2. Asegúrate de tener configurado el SDK de JavaFX en tu IDE
+3. Configura los modulos de `javafx.controls`, `javafx.fxml` y `javafx.media`.
+4. Ejecuta `Main.java` y suena la musica
 
 ## Autor
 - **Williams Sánchez** - [Williamsanchez056](https://github.com/Williamsanchez056)

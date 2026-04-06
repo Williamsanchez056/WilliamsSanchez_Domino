@@ -16,7 +16,7 @@ public class Jugador {
     public void agregarFicha(Ficha ficha){
         mano.add(ficha);
     }
-
+    
     public void jugarFicha(Ficha ficha){
         mano.remove(ficha);
     }

@@ -1,5 +1,4 @@
 package controller;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -30,6 +29,10 @@ public class JuegoController {
 
         empezarJuego();
     }
+    public void comenzarNuevaPartida() {
+    System.out.println("Comenzando nueva partida");
+    empezarJuego(); 
+}
     private void empezarJuego() {
         List<Ficha> manoInicial = mazo.repartir(7);
         for (Ficha f : manoInicial) {
@@ -37,6 +40,7 @@ public class JuegoController {
             mostrarFichaEnPantalla(f);
         }
     }
+
     private void mostrarFichaEnPantalla(Ficha fichaLogica) {
         try {
 
@@ -52,6 +56,7 @@ public class JuegoController {
             System.err.println("Error cargando Ficha.fxml: " + e.getMessage());
         }
     }
+
     @FXML
     private void reiniciarPartida() {
         contenedorManoJugador.getChildren().clear();

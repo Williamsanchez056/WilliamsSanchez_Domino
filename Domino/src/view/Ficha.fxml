@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="contenedorFicha" alignment="CENTER" prefHeight="80.0" prefWidth="50.0" 
+      style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 2;" 
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="controller.FichaController">
+   
+   <children>
+      <Label fx:id="lblSuperior" text="6">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+
+      <HBox prefHeight="2.0" prefWidth="50.0" style="-fx-background-color: black;" />
+
+      <Label fx:id="lblInferior" text="6">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
