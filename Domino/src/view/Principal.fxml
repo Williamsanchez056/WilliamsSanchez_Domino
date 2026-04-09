@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2d5a27;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JuegoController">
    <children>
-      <Label layoutX="425.0" layoutY="25.0" text="Dominó" textFill="WHITE">
+      <Label layoutX="425.0" layoutY="25.0" text="Domino" textFill="WHITE">
          <font>
             <Font name="System Bold" size="42.0" />
          </font>

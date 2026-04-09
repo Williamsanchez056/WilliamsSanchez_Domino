@@ -21,9 +21,6 @@ private void botonEmpezar(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Principal.fxml"));
         Parent raizJuego = loader.load();
 
-        JuegoController juegoCtrl = loader.getController();
-        juegoCtrl.comenzarNuevaPartida(); 
-
         Stage ventana = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene escenaJuego = new Scene(raizJuego);
         ventana.setScene(escenaJuego);

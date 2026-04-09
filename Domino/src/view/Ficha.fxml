@@ -7,7 +7,7 @@
 <VBox fx:id="contenedorFicha" alignment="CENTER" prefHeight="80.0" prefWidth="50.0" 
       style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 2;" 
       xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
-      fx:controller="controller.FichaController">
+      fx:controller="controller.FichaController" onMouseClicked="#onFichaClicked">
    
    <children>
       <Label fx:id="lblSuperior" text="6">

@@ -43,6 +43,10 @@ public class LogicaTablero {
         }
         return false;
     }
+
+    public java.util.List<Ficha> getFichasEnTablero() {
+        return java.util.Collections.unmodifiableList(fichasEnTablero);
+    }
 }
 
 

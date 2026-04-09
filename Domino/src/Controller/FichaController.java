@@ -16,6 +16,12 @@ public class FichaController {
 
     private Ficha fichaLogica; 
 
+    private JuegoController juegoPrincipal;
+
+    public void setJuegoPrincipal(JuegoController juegoPrincipal){
+        this.juegoPrincipal = juegoPrincipal;
+    }
+
     public void cargarDatos(Ficha ficha) {
         this.fichaLogica = ficha;
         
@@ -31,10 +37,14 @@ public class FichaController {
         return this.fichaLogica;
     }
 
+    public VBox getNodoFicha() {
+        return contenedorFicha;
+    }
+
     @FXML
-    public void FichaClick() {
-        if (fichaLogica != null) {
-            System.out.println("Click en ficha: " + fichaLogica.toString());
+    public void onFichaClicked() {
+        if (juegoPrincipal != null && fichaLogica != null) {
+            juegoPrincipal.intentarJugarFicha(this);
         }
     }
 }
