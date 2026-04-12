@@ -35,5 +35,8 @@ Proyecto desarrollado para la asignatura de Programación, enfocado en la implem
 3. Configura los modulos de `javafx.controls`, `javafx.fxml` y `javafx.media`.
 4. Ejecuta `Main.java` y suena la musica
 
+## Decisiones del diseño
+1. Arquitetura MVC: Opte por esta aqui para poder separar lo que es la logica de la ficha y el mazo (model) de la interfaz grafica (view). Esto me permitio que el motor del jugo sea indenpendiente.
+
 ## Autor
 - **Williams Sánchez** - [Williamsanchez056](https://github.com/Williamsanchez056)
