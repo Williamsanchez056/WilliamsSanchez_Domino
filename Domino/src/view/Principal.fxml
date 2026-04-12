@@ -21,7 +21,14 @@
          </children>
       </VBox>
 
-      <VBox alignment="CENTER" layoutX="50.0" layoutY="500.0" prefHeight="150.0" prefWidth="900.0" spacing="10.0">
+      <VBox fx:id="vboxJugador2" alignment="CENTER" layoutX="50.0" layoutY="80.0" prefHeight="100.0" prefWidth="900.0">
+         <children>
+            <Label text="Jugador 2" textFill="WHITE" />
+            <HBox fx:id="contenedorManoJugador2" alignment="CENTER" spacing="10.0" />
+         </children>
+      </VBox>
+
+      <VBox fx:id="vboxJugador1" alignment="CENTER" layoutX="50.0" layoutY="500.0" prefHeight="150.0" prefWidth="900.0" spacing="10.0">
          <children>
             <Label text="Tus Fichas" textFill="WHITE">
                <font>
@@ -33,5 +40,16 @@
       </VBox>
 
       <Button layoutX="880.0" layoutY="30.0" mnemonicParsing="false" onAction="#reiniciarPartida" text="Reiniciar" />
+
+      <VBox alignment="CENTER" layoutX="880.0" layoutY="500.0" spacing="5.0">
+         <children>
+            <Label text="Pozo" textFill="WHITE" />
+            <Button fx:id="btnTomarFicha" onAction="#tomarDelPozo" 
+                    style="-fx-background-color: #f1c40f; -fx-background-radius: 5;" 
+                    text="TOMAR" />
+            <Label fx:id="lblCantidadPozo" text="14" textFill="WHITE" />
+         </children>
+      </VBox>
+
    </children>
 </AnchorPane>

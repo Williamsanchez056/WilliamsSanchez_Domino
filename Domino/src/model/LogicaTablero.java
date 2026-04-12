@@ -18,12 +18,11 @@ public class LogicaTablero {
         if (alInicio) {
             int extremoIzquierdo = fichasEnTablero.getFirst().getLadoA();
             
-            if (ficha.getLadoB() == extremoIzquierdo) {
+            if (ficha.getLadoA() == extremoIzquierdo) {
                 fichasEnTablero.addFirst(ficha);
                 return true;
             } 
-
-            else if (ficha.getLadoA() == extremoIzquierdo) {
+            else if (ficha.getLadoB() == extremoIzquierdo) {
                 Ficha volteada = new Ficha(ficha.getLadoB(), ficha.getLadoA());
                 fichasEnTablero.addFirst(volteada);
                 return true;
@@ -31,11 +30,11 @@ public class LogicaTablero {
         } else {
             int extremoDerecho = fichasEnTablero.getLast().getLadoB();
             
-            if (ficha.getLadoA() == extremoDerecho) {
+            if (ficha.getLadoB() == extremoDerecho) {
                 fichasEnTablero.addLast(ficha);
                 return true;
             } 
-            else if (ficha.getLadoB() == extremoDerecho) {
+            else if (ficha.getLadoA() == extremoDerecho) {
                 Ficha volteada = new Ficha(ficha.getLadoB(), ficha.getLadoA());
                 fichasEnTablero.addLast(volteada);
                 return true;

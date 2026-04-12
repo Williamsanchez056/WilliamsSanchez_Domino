@@ -16,7 +16,7 @@ public class MenuInicioController {
     private MediaPlayer mediaPlayer; 
 
     @FXML
-private void botonEmpezar(ActionEvent event) {
+    private void botonEmpezar(ActionEvent event) {
     try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Principal.fxml"));
         Parent raizJuego = loader.load();

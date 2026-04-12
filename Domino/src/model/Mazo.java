@@ -34,7 +34,16 @@ public class Mazo {
         }
         return null;
     }
-
+    public Ficha sacarFichaDelpozo(){
+        if(!fichas.isEmpty()){
+            return fichas.remove(0);
+        }
+        return null;
+    }
+    
+    public int getCantidadFichasRestantes() {
+        return fichas.size();
+    }
 
     
 

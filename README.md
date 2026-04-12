@@ -1,4 +1,4 @@
-# Juego de Domino Criollo 
+# Juego de Domino
 
 Proyecto desarrollado para la asignatura de Programación, enfocado en la implementación del patrón de diseño **MVC (Modelo-Vista-Controlador)** y el uso de **FXML** para una interfaz moderna y funcional.
 
